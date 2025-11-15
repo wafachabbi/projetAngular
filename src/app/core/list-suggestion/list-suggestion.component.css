@@ -1,0 +1,134 @@
+/* ---------------------- PAGE ---------------------- */
+.page-title {
+  text-align: center;
+  font-size: 26px;
+  font-weight: 600;
+  margin: 30px 0 10px;
+}
+
+/* ---------------------- BARRE DE RECHERCHE ---------------------- */
+.search-bar {
+  width: 80%;
+  max-width: 650px;
+  display: block;
+  margin: 0 auto 25px;
+  padding: 12px 18px;
+  border-radius: 10px;
+  border: 1px solid #ddd;
+  font-size: 15px;
+  transition: 0.2s;
+}
+
+.search-bar:focus {
+  border-color: #0d6efd;
+  box-shadow: 0 0 6px rgba(13, 110, 253, 0.4);
+  outline: none;
+}
+
+/* ---------------------- CARTE SUGGESTION ---------------------- */
+.suggestion-card {
+  width: 80%;
+  max-width: 900px;
+  background: #ffffff;
+  margin: 0 auto 30px;
+  padding: 25px 30px;
+  border-radius: 15px;
+  box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+  transition: 0.2s ease-in-out;
+}
+
+.suggestion-card:hover {
+  transform: translateY(-2px);
+}
+
+/* ---------------------- HEADER DES CARTES ---------------------- */
+.category {
+  color: #0d6efd;
+  font-weight: bold;
+  font-size: 14px;
+}
+
+.date {
+  color: #636363;
+  font-size: 13px;
+  margin-left: 12px;
+}
+
+/* ---------------------- TITRE ---------------------- */
+.suggestion-title {
+  font-size: 22px;
+  font-weight: 600;
+  margin: 8px 0 8px;
+}
+
+/* ---------------------- DESCRIPTION ---------------------- */
+.description {
+  color: #444;
+  font-size: 15px;
+  line-height: 1.5;
+}
+
+/* ---------------------- BADGES STATUS ---------------------- */
+.badge {
+  display: inline-block;
+  padding: 6px 14px;
+  border-radius: 20px;
+  font-size: 12px;
+  margin-top: 12px;
+  font-weight: 600;
+}
+
+.acceptee {
+  background-color: #d4edda;
+  color: #1e7e34;
+}
+
+.refusee {
+  background-color: #f8d7da;
+  color: #b02a37;
+}
+
+.en_attente {
+  background-color: #ffeeba;
+  color: #856404;
+}
+
+/* ---------------------- BOUTONS ---------------------- */
+.buttons {
+  margin-top: 18px;
+}
+
+button {
+  padding: 10px 18px;
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+  margin-right: 10px;
+  font-size: 14px;
+  font-weight: 500;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  transition: 0.2s;
+}
+
+button:hover {
+  opacity: 0.9;
+}
+
+/* Bouton LIKE */
+.like-btn {
+  background-color: #0d6efd;
+  color: #fff;
+}
+
+/* Bouton FAVORIS */
+.favorite-btn {
+  background-color: #f1f1f1;
+  border: 1px solid #ddd;
+  color: #333;
+}
+
+.favorite-btn:hover {
+  background-color: #e4e4e4;
+}
