@@ -35,6 +35,13 @@
   <div *ngIf="s.status !== 'refusee'" class="buttons">
     <button class="like-btn" (click)="like(s)">👍 Like {{ s.likes }}</button>
     <button class="favorite-btn" (click)="addToFavorites(s)">⭐ Ajouter aux favoris</button>
+    <ul>
+      <li *ngFor="let item of suggestions">
+        {{ item.title }}
+        <button [routerLink]="[item.id]">Details</button>
+      </li>
+    </ul>
+
   </div>
 
 </div>
