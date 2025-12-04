@@ -5,10 +5,15 @@ import {SuggestionDetailsComponent} from './suggestion-details/suggestion-detail
 import {ListSuggestionComponent} from './list-suggestion/list-suggestion.component';
 
 const routes: Routes = [
-  { path: '', component: SuggestionsComponent },
-  { path: '', component: ListSuggestionComponent },
-  // Route paramétrée
-  { path: ':id', component: SuggestionDetailsComponent }
+  {
+    path: '',
+    component: SuggestionsComponent,
+    children: [
+      { path: '', redirectTo: 'list', pathMatch: 'full' }, // ou directement ListSuggestionComponent
+      { path: 'list', component: ListSuggestionComponent },
+      { path: ':id', component: SuggestionDetailsComponent }
+    ]
+  }
 ];
 
 @NgModule({

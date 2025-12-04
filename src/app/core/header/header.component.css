@@ -1,48 +1,57 @@
-
-.navbar {
-  width: 95%;
-  background-color: #1f3b57;   /* Bleu foncé */
-  color: white;
-  padding: 15px 40px;
+/* --- NAVBAR COLORÉE ET DYNAMIQUE --- */
+.colorful-navbar {
+  width: 93%;
+  padding: 12px 50px;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  box-shadow: 0 3px 8px rgba(0,0,0,0.15);
+
+  /* Dégradé vibrant */
+  background: linear-gradient(90deg, #0d6efd, #6610f2);
+  color: white;
+
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+  font-family: "Segoe UI", sans-serif;
 }
 
-.logo {
-  font-size: 22px;
-  font-weight: 600;
+.logo-colorful {
+  font-size: 24px;
+  font-weight: 700;
+  letter-spacing: 1px;
 }
 
-.navbar-right {
+.nav-colorful-links {
   display: flex;
   align-items: center;
   gap: 25px;
 }
 
-.nav-link {
+.nav-colorful-link {
   color: white;
   text-decoration: none;
-  font-size: 15px;
-  transition: 0.2s;
+  font-weight: 500;
+  position: relative;
+  transition: 0.3s;
 }
 
-.nav-link:hover {
-  opacity: 0.75;
+.nav-colorful-link:hover {
+  color: #ffdd57;
 }
 
-.nav-btn {
-  padding: 8px 16px;
-  background-color: #0d6efd;
-  border-radius: 6px;
+.nav-colorful-btn {
+  padding: 10px 22px;
+  background-color: rgba(255,255,255,0.15);
   color: white;
+  border-radius: 25px;
   text-decoration: none;
-  font-size: 15px;
-  transition: 0.2s;
+  font-weight: 500;
+  border: 1px solid white;
+  transition: 0.3s;
 }
 
-.nav-btn:hover {
-  background-color: #0b5ed7;
-  opacity: 0.95;
+.nav-colorful-btn:hover {
+  background-color: white;
+  color: #6610f2;
+  transform: translateY(-2px);
 }

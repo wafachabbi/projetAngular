@@ -7,10 +7,7 @@
   [(ngModel)]="searchText"
 />
 
-<div
-  *ngFor="let s of filteredSuggestions()"
-  class="suggestion-card"
->
+<div *ngFor="let s of filteredSuggestions()" class="suggestion-card">
 
   <div class="category">
     {{ s.category }}
@@ -21,14 +18,10 @@
 
   <p class="description">{{ s.description }}</p>
 
-  <span
-    class="badge"
-    [ngClass]="{
+  <span class="badge"  [ngClass]="{
       'acceptee': s.status === 'acceptee',
       'refusee' : s.status === 'refusee',
-      'en_attente': s.status === 'en_attente'
-    }"
-  >
+      'en_attente': s.status === 'en_attente'}">
     {{ s.status | uppercase }}
   </span>
 
@@ -38,10 +31,9 @@
     <ul>
       <li *ngFor="let item of suggestions">
         {{ item.title }}
-        <button [routerLink]="[item.id]">Details</button>
+        <button routerLink="/suggestions/{{ s.id }}">Détails</button>
       </li>
     </ul>
-
   </div>
 
 </div>

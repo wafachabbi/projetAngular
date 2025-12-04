@@ -1,9 +1,13 @@
-<h3>Détails de la suggestion</h3>
+<div class="details-card">
+  <h3>Détails de la suggestion</h3>
 
-<p><strong>ID :</strong> {{ suggestion?.id }}</p>
-<p><strong>Titre :</strong> {{ suggestion?.title }}</p>
-<p><strong>Description :</strong> {{ suggestion?.description }}</p>
+  <p><strong>ID :</strong> {{ suggestion?.id }}</p>
+  <p><strong>Titre :</strong> {{ suggestion?.title }}</p>
+  <p><strong>Description :</strong> {{ suggestion?.description }}</p>
 
-<br>
+  <br>
 
-<button (click)="backToList()">← Back to list</button>
+  <button class="back-btn" (click)="backToList()">
+    Retour à la liste
+  </button>
+</div>
